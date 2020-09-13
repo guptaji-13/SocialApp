@@ -1,12 +1,15 @@
 const mongoose = require('mongoose');
 const config = require('config');
-const db = config.get('mongoURI');
+var db = `mongodb+srv://guptaji13:${config.get(
+  'mongoPassword'
+)}@socialapp.zl4fv.mongodb.net/<dbname>?retryWrites=true&w=majority`;
 
-const connectDB = async () => {
+async function connectDB() {
   try {
     await mongoose.connect(db, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      useCreateIndex: true,
     });
     console.log('MongoDB Connected...');
   } catch (err) {
@@ -14,6 +17,6 @@ const connectDB = async () => {
     // Exit process with failure
     process.exit(1);
   }
-};
+}
 
 module.exports = connectDB;

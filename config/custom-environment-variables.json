@@ -1,0 +1,4 @@
+{
+  "mongoPassword": "MongoAtlas",
+  "jwtSecret": "mySecretToken"
+}
