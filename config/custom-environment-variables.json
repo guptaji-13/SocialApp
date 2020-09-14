@@ -1,4 +1,6 @@
 {
-  "mongoPassword": "MongoAtlas",
-  "jwtSecret": "mySecretToken"
+    "mongoPassword": "MongoAtlas",
+    "jwtSecret": "mySecretToken",
+    "gitHubClientId": "gitHubClientId",
+    "gitHubClientSecret": "gitHubClientSecret"
 }
