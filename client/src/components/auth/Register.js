@@ -44,7 +44,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   };
 
   if (isAuthenticated) {
-    return <Redirect to='/Redirect' />;
+    return <Redirect to='/create-profile' />;
   }
 
   return (
