@@ -41,6 +41,7 @@ export default function (state = initialState, action) {
     case CLEAR_PROFILE:
       return {
         ...state,
+        user: null,
         profile: null,
         repos: [],
         loading: false,
